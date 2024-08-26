@@ -1,0 +1,91 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: url('file:///C:/Users/Inshe/Downloads/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+}
+
+.skills-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color:transparent; 
+  color: #4b4453; 
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.skill {
+  padding: 20px;
+  border: 1px solid #dcd0ff; 
+  border-radius: 15px; 
+  background-color:transparent; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.skill:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.skill span {
+  font-size: 20px;
+  font-weight: bold;
+  color:whitesmoke; 
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 10px; 
+  background-color: #e0e0e0; 
+}
+
+
+progress::-webkit-progress-bar {
+  background-color: transparent; 
+}
+
+progress::-webkit-progress-value {
+  background-color: #391736;
+  border-radius: 10px 0 0 10px; 
+}
+
+
+progress::-moz-progress-bar {
+  background-color: transparent; 
+  border-radius: 10px 0 0 10px;
+}
+
+
+.skills-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: whitesmoke; 
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjusted width */
+  gap: 20px;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Updated to display 3 skills per row */
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
